@@ -217,9 +217,9 @@ Terima kasih kepada:
 
 ## 📞 Kontak
 
-- Email: your.email@example.com
-- Telegram: [@yourusername](https://t.me/yourusername)
-- GitHub: [yourusername](https://github.com/yourusername)
+- Email: marketing789@.group@gmail.com
+- Telegram: [@kesatryapedang](https://t.me/@kesatryapedang)
+- GitHub: [teamteampur](https://github.com/teamtempur/Asisstent_mikasa)
 
 ---
 
