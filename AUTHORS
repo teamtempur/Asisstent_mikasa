@@ -1,0 +1,26 @@
+# Authors and Contributors
+
+## Original Author
+
+- **Your Name** - *Initial work* - [yourusername](https://github.com/yourusername)
+
+## Contributors
+
+Terima kasih kepada semua kontributor yang telah membantu project ini!
+
+<!--
+Tambahkan nama Anda di sini jika Anda berkontribusi!
+Format:
+- **Nama** - *Kontribusi* - [username](https://github.com/username)
+-->
+
+## Special Thanks
+
+- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) - Telegram Bot API library
+- [gspread](https://github.com/burnash/gspread) - Google Sheets API library
+- [Google Cloud](https://cloud.google.com/) - Google Sheets API
+- [Telegram](https://telegram.org/) - Platform messaging
+
+---
+
+Jika Anda berkontribusi ke project ini, silakan tambahkan nama Anda di atas!

@@ -1,0 +1,39 @@
+# Include README and documentation
+include README.md
+include INSTALL.md
+include QUICKSTART.md
+include PANDUAN_GOOGLE_SHEETS.md
+include DEPLOY.md
+include FAQ.md
+include CONTRIBUTING.md
+include CHANGELOG.md
+include LICENSE
+include SUMMARY.md
+
+# Include configuration files
+include requirements.txt
+include .env.example
+include tree.txt
+
+# Include runner scripts
+include run.bat
+include run.sh
+include start.bat
+include start.sh
+
+# Exclude sensitive files
+exclude credentials.json
+exclude .env
+exclude *.log
+
+# Exclude cache and build files
+recursive-exclude __pycache__ *
+recursive-exclude *.pyc
+recursive-exclude *.pyo
+recursive-exclude *.pyd
+recursive-exclude .git *
+recursive-exclude venv *
+recursive-exclude env *
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude *.egg-info *

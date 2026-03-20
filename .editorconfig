@@ -1,0 +1,65 @@
+# EditorConfig untuk Bot Telegram Claim TukTuk
+# Memastikan konsistensi coding style di seluruh project
+# https://editorconfig.org
+
+# Root file
+root = true
+
+# Semua file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# File Python
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+
+# File JavaScript/JSON
+[*.{js,json}]
+indent_style = space
+indent_size = 2
+
+# File YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# File Markdown
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# File Makefile
+[Makefile]
+indent_style = tab
+
+# File Batch
+[*.bat]
+end_of_line = crlf
+
+# File Shell
+[*.sh]
+end_of_line = lf
+
+# File Config
+[*.{ini,cfg,conf}]
+indent_style = space
+indent_size = 4
+
+# File HTML/CSS
+[*.{html,css}]
+indent_style = space
+indent_size = 2
+
+# File XML
+[*.xml]
+indent_style = space
+indent_size = 2
+
+# File Documentation
+[*.txt]
+max_line_length = off

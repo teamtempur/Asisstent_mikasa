@@ -1,0 +1,41 @@
+Bot Telegram Claim TukTuk
+Copyright (c) 2026 Your Name
+
+This product includes software developed by third parties:
+
+1. python-telegram-bot
+   Copyright (c) 2015-2026 python-telegram-bot contributors
+   License: LGPLv3
+   https://github.com/python-telegram-bot/python-telegram-bot
+
+2. gspread
+   Copyright (c) 2014 Anton Burnashev
+   License: MIT
+   https://github.com/burnash/gspread
+
+3. google-auth-library-python
+   Copyright (c) Google LLC
+   License: Apache 2.0
+   https://github.com/googleapis/google-auth-library-python
+
+4. python-dotenv
+   Copyright (c) 2014 Saurabh Kumar
+   License: BSD-3-Clause
+   https://github.com/theskumar/python-dotenv
+
+5. python-dateutil
+   Copyright (c) 2003-2011 Gustavo Niemeyer
+   License: Apache 2.0
+   https://github.com/dateutil/dateutil
+
+This software uses the Telegram Bot API:
+   https://core.telegram.org/bots/api
+
+This software uses the Google Sheets API:
+   https://developers.google.com/sheets/api
+
+For the full text of the licenses, see the LICENSE file or visit:
+   MIT License: https://opensource.org/licenses/MIT
+   LGPLv3: https://www.gnu.org/licenses/lgpl-3.0.html
+   Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+   BSD-3-Clause: https://opensource.org/licenses/BSD-3-Clause

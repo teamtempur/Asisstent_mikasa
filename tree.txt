@@ -1,0 +1,91 @@
+telegram_bot_tuktuk/
+│
+├── 📁 FILE UTAMA (Wajib Ada)
+│   ├── bot.py                      # Kode utama bot Telegram
+│   │                               # - Semua command dan handler
+│   │                               # - Conversation flow untuk input data
+│   │                               # - Error handling
+│   │
+│   ├── config.py                   # Konfigurasi bot
+│   │                               # - Telegram token
+│   │                               # - Google Sheets settings
+│   │                               # - Environment variables support
+│   │
+│   ├── google_sheets.py            # Modul integrasi Google Sheets
+│   │                               # - CRUD operations
+│   │                               # - Rekapan data
+│   │                               # - User management
+│   │
+│   └── requirements.txt            # Daftar dependensi Python
+│                                   # - python-telegram-bot
+│                                   # - gspread
+│                                   # - google-api-python-client
+│                                   # - python-dotenv
+│
+├── 📁 FILE PENDUKUNG
+│   ├── utils.py                    # Utility functions
+│   │                               # - Validasi tanggal
+│   │                               # - Konversi mata uang
+│   │                               # - Format angka dan teks
+│   │
+│   ├── __init__.py                 # Package initialization
+│   │
+│   └── setup.py                    # Setup script untuk instalasi
+│
+├── 📁 FILE RUNNER
+│   ├── run.bat                     # Windows runner (dengan venv)
+│   ├── run.sh                      # Linux/Mac runner (dengan venv)
+│   ├── start.bat                   # Windows runner (sederhana)
+│   └── start.sh                    # Linux/Mac runner (sederhana)
+│
+├── 📁 DOKUMENTASI
+│   ├── README.md                   # Dokumentasi utama
+│   ├── INSTALL.md                  # Panduan instalasi lengkap
+│   ├── QUICKSTART.md               # Panduan cepat (5 menit)
+│   ├── PANDUAN_GOOGLE_SHEETS.md    # Setup Google Sheets API
+│   ├── DEPLOY.md                   # Panduan deployment
+│   ├── FAQ.md                      # Frequently Asked Questions
+│   ├── CONTRIBUTING.md             # Panduan kontribusi
+│   ├── CHANGELOG.md                # Log perubahan versi
+│   ├── SUMMARY.md                  # Ringkasan project
+│   └── LICENSE                     # Lisensi MIT
+│
+├── 📁 TESTING & CONTOH
+│   ├── test_bot.py                 # Unit test
+│   │                               # - Test utility functions
+│   │                               # - Test config
+│   │                               # - Test Google Sheets
+│   │
+│   └── example.py                  # Contoh penggunaan
+│                                   # - Contoh CRUD operations
+│                                   # - Contoh rekapan data
+│
+└── 📁 KONFIGURASI
+    ├── .env.example                # Contoh environment variables
+    │                               # - TELEGRAM_BOT_TOKEN
+    │                               # - GOOGLE_SHEETS_CREDENTIALS_FILE
+    │                               # - SPREADSHEET_NAME
+    │
+    └── .gitignore                  # Git ignore rules
+                                    # - Python cache
+                                    - Virtual environment
+                                    - Credentials file
+                                    - Log files
+
+═══════════════════════════════════════════════════════════════
+
+TOTAL FILE: 20+ file
+TOTAL BARIS KODE: ~2000+ baris
+DEPENDENCIES: 7+ package
+
+═══════════════════════════════════════════════════════════════
+
+CARA MENGGUNAKAN:
+
+1. Copy .env.example → .env
+2. Isi TELEGRAM_BOT_TOKEN di .env
+3. Download credentials.json dari Google Cloud Console
+4. pip install -r requirements.txt
+5. python bot.py
+
+═══════════════════════════════════════════════════════════════

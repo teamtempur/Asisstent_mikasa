@@ -1,0 +1,20 @@
+# ==========================================
+# DEPENDENCIES BOT TELEGRAM CLAIM TUKTUK
+# ==========================================
+# Install dengan: pip install -r requirements.txt
+
+# Telegram Bot API
+python-telegram-bot>=20.0
+
+# Google Sheets API
+gspread>=5.0.0
+google-auth>=2.0.0
+google-auth-oauthlib>=0.5.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Utilities
+python-dateutil>=2.8.0

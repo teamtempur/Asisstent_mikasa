@@ -1,0 +1,59 @@
+# Docker Compose untuk Bot Telegram Claim TukTuk
+# Usage: docker-compose up -d
+
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tuktuk-bot
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - GOOGLE_SHEETS_CREDENTIALS_FILE=/app/credentials.json
+      - SPREADSHEET_NAME=${SPREADSHEET_NAME:-Claim TukTuk}
+      - WORKSHEET_CLAIM=${WORKSHEET_CLAIM:-Data Claim}
+      - WORKSHEET_USERS=${WORKSHEET_USERS:-Data Users}
+      - EXCHANGE_RATE=${EXCHANGE_RATE:-4000}
+      - DEBUG=${DEBUG:-False}
+    
+    # Mount credentials file
+    volumes:
+      - ./credentials.json:/app/credentials.json:ro
+      - ./logs:/app/logs
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+# Optional: Add monitoring with Prometheus/Grafana
+#  prometheus:
+#    image: prom/prometheus:latest
+#    container_name: tuktuk-prometheus
+#    ports:
+#      - "9090:9090"
+#    volumes:
+#      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+#    restart: unless-stopped
+#
+#  grafana:
+#    image: grafana/grafana:latest
+#    container_name: tuktuk-grafana
+#    ports:
+#      - "3000:3000"
+#    restart: unless-stopped
